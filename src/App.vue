@@ -34,4 +34,19 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
+.home .pokes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.home .pokes span {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  padding: 30px 40px;
+}
 </style>
