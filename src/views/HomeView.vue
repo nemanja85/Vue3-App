@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <h2>Poke API</h2>
     <input type="text" placeholder="Enter Poke name" class="form-input" v-model="content" />
     <div class="pokes">
       <div v-for="(poke, index) in filteredList" :key="index">

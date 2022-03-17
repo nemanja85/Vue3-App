@@ -1,4 +1,5 @@
 <template>
+  <router-link to="/" class="title">Pokes Picker</router-link>
   <router-view />
 </template>
 
@@ -8,6 +9,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  color: #2c3e50;
+}
+
+#app .title {
+  font-size: 60px;
+  line-height: 80px;
+  font-weight: 700;
+  letter-spacing: 0.08rem;
+  text-decoration: none;
   color: #2c3e50;
 }
 
@@ -32,5 +42,22 @@
   font-weight: 500;
   letter-spacing: 0.05rem;
   padding: 30px 40px;
+}
+
+.about {
+  display: block;
+  width: 30%;
+  background-color: cadetblue;
+  padding: 20px;
+  margin: auto;
+}
+
+.about .pictures {
+  display: flex;
+  justify-content: center;
+}
+
+.about .pictures img {
+  width: 100px;
 }
 </style>
