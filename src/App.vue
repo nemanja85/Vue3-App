@@ -35,6 +35,14 @@ nav a.router-link-exact-active {
   color: #42b983;
 }
 
+.home .form-input {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.05rem;
+  padding: 20px;
+  border: 1px solid #2c3e50;
+}
+
 .home .pokes {
   display: flex;
   justify-content: space-between;
