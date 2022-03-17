@@ -4,7 +4,9 @@
     <input type="text" placeholder="Enter Poke name" class="form-input" v-model="content" />
     <div class="pokes">
       <div v-for="(poke, index) in filteredList" :key="index">
-        <span>{{ poke.name }}</span>
+        <router-link :to="`/about/${urlID[poke.name]}`">
+          <span>{{ poke.name }}</span>
+        </router-link>
       </div>
     </div>
   </div>
@@ -31,11 +33,8 @@ export default {
     fetch('https://pokeapi.co/api/v2/pokemon?offset=0')
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         state.pokes = data.results;
-        state.urlID = data.results.reduce((acc, val, index) => {
-          acc = { ...acc, [val.name]: index + 1 };
-        });
+        state.urlID = data.results.reduce((acc, val, index) => (acc = { ...acc, [val.name]: index + 1 }), {});
       });
     return { ...toRefs(state) };
   },
