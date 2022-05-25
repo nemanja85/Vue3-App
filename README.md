@@ -1,24 +1,8 @@
 # pokemon-app
 
-## Project setup
-```
-yarn install
-```
+## Author
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+👤 **Nemanja Mitic**
+* Github: [@Nemanja85](https://github.com/nemanja85)
+* LinkedIn: [@Nemanja Mitic](https://www.linkedin.com/in/nemanjamitic1985/)
